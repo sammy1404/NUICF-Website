@@ -11,7 +11,7 @@ body {
 }
 
 section{
-  background-color: #8994cd;
+  background-color: white;
 }
 
 .logo a{
@@ -221,6 +221,110 @@ section{
     transform: scale(1.05);
     cursor: pointer;
   }
+
+
+
+
+#Contact {
+  height: 350px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  background-color:  rgb(35, 34, 34);
+  color: white;
+}
+
+#Contact h6 {
+  font-size: 20px;
+  margin: 0; /* Ensure there's no top margin */
+}
+
+#contactDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+#contactDetails ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Adjust the gap as needed */
+}
+
+#contactDetails ul p {
+  font-size: 10px;
+}
+
+#contactDetails ul svg {
+  width: 15px;
+
+}
+
+#contactDetails ul:hover {
+  cursor: pointer;
+}
+
+#contactDetails ul li:hover {
+  transform: scale(1.2);
+  transform: translateY(-2px);
+}
+
+#contactDetails ul li {
+  display: flex;
+  transition: all 0.4s;
+  align-items: center;
+}
+
+#ministryDetails h6 {
+  margin: 0 0 10px 0; /* Ensure there's no top margin, add bottom margin */
+}
+
+#ministryDetails ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+#ministryDetails ul li {
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 13px;
+}
+
+#ministryDetails a {
+  display: block; /* Make the link take up the full width, stacking below the list items */
+  font-size: 10px;
+  color: white;
+}
+
+#map iframe {
+  width: 300px;
+  height: 200px;
+}
+
+#socials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Change to space-between */
+  padding-inline: 40vw;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#socials svg{
+  width: 20px;
+  transition: all linear 0.3s;
+}
+
+#socials svg:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
   }
 
   #Services{
@@ -394,6 +498,110 @@ section{
   }
 
 
+
+
+
+
+#Contact {
+  height: 350px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  background-color:  rgb(35, 34, 34);
+  color: white;
+}
+
+#Contact h6 {
+  font-size: 30px;
+  margin: 0; /* Ensure there's no top margin */
+}
+
+#contactDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+#contactDetails ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Adjust the gap as needed */
+}
+
+#contactDetails ul p {
+  font-size: 13px;
+}
+
+#contactDetails ul svg {
+  width: 15px;
+
+}
+
+#contactDetails ul:hover {
+  cursor: pointer;
+}
+
+#contactDetails ul li:hover {
+  transform: scale(1.2);
+  transform: translateY(-2px);
+}
+
+#contactDetails ul li {
+  display: flex;
+  transition: all 0.4s;
+  align-items: center;
+}
+
+#ministryDetails h6 {
+  margin: 0 0 10px 0; /* Ensure there's no top margin, add bottom margin */
+}
+
+#ministryDetails ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+#ministryDetails ul li {
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 13px;
+}
+
+#ministryDetails a {
+  display: block; /* Make the link take up the full width, stacking below the list items */
+  font-size: 13px;
+  color: white;
+}
+
+#map iframe {
+  width: 300px;
+  height: 200px;
+}
+
+#socials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Change to space-between */
+  padding-inline: 43vw;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#socials svg{
+  width: 20px;
+  transition: all linear 0.3s;
+}
+
+#socials svg:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
 }
 
 
@@ -409,7 +617,7 @@ section{
   transform: scale(1);
 }
 
-
+/* mobile screen's stacked video container */
 @media (max-width: 450px) {
   .column {
     flex-direction: column; 
@@ -429,4 +637,25 @@ section{
     margin-top: 10vh;
     margin-bottom: 2vh;
   }
+
+  #Contact{
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #contactDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  #socials{
+    padding-inline: 30vw;
+  }
 }
+
+
+
+/*  
+rgb(3, 3, 15);
+*/
