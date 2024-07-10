@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+section{
+  background-color: #8994cd;
+}
+
 .logo a{
     color: #fff;
     font-size: 60px;
