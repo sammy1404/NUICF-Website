@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NUICF</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<div class="hamburger-menu">
+   <div class="logo"><a href="#">NUICF</a></div>
+</div>
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+<div class="nav">
+   <div class="logo"><a href="#">NUICF</a></div>
+   <ul class="menu">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Announcements">Announcements</a></li>
+      <li><a href="#Contact">Get in Touch!</a></li>
+   </ul>
+   <script src="script.js"></script> 
+</div>
+<div class="content">
+   <section id="Home">
+      <div class="gallery-wrap">
+         <img src="./assets/Left Arrow Icon.png" alt="Left Arrow" class="left-arrow" id="left-arrow">
+         <div class="gallery" id="gallery">
+            <span>
+               <img src="./assets/churchFellowship.jpeg" alt="">
+            </span>
+            <span>
+               <img src="./assets/sundaySchool.jpeg" alt="">
+            </span>
+            <span>
+               <img src="./assets/YouthFellowship.jpeg" alt="">
+            </span>
+         </div>
+         <img src="./assets/Right Arrow Icon.png" alt="Right Arrow" class="right-arrow" id="right-arrow">
+      </div>
+   </section>
+   <section id="About">About Section</section>
+   <section id="Services">
+      <h2>Our Services</h2>
+      <div class="videoContainer">
+       
+         <div class="grid-container" id="hidden">
+            <div class="large-frame">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/F-YNCI1Tt4I?si=CzhHLWw3-OkZMrVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+               <div class="small-frame" id="hidden">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/zt4WWCne6eA?si=7dxmso7E_kCR_lxL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+               <div class="small-frame" id="hidden">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sbG0VRuVX38?si=uJs6tFtzn3aetHaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+            </div>
+
+        </div>
+    
+
+       </div>
+       
+      
+
+   </section>
+   <section id="Announcements">Announcements Section</section>
+   <section id="Contact">Contact Section</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
