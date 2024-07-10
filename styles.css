@@ -653,6 +653,11 @@ section{
   #socials{
     padding-inline: 30vw;
   }
+  #ministryDetails a {
+    display: block; /* Make the link take up the full width, stacking below the list items */
+    font-size: 13px;
+    color: white;
+  }
 }
 
 
