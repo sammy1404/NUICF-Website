@@ -639,9 +639,10 @@ section{
   }
 
   #Contact{
-    height:70vh;
+    height:80vh;
     display: flex;
     flex-direction: column;
+
   }
   #contactDetails {
     display: flex;
