@@ -8,10 +8,11 @@
 }
 body {
     overflow-x: hidden;
+    background-color: rgb(3, 3, 15);
 }
 
 section{
-  background-color: white;
+
 }
 
 .logo a{
@@ -180,6 +181,7 @@ section{
     font-size: 45px;
     margin-top: 13vh;
     margin-bottom: 2vh;
+    color: white;
   }
     .grid-container {
       display: flex;
@@ -425,7 +427,8 @@ section{
     }
     
     #Services h2{
-      font-size: 75px;
+      color: white;
+      font-size: 50px;
       margin-top: 11vh;
     }
 
@@ -604,7 +607,23 @@ section{
 
 }
 
+#Services a{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: rgb(26, 26, 55);
+  padding: 10px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: all linear 0.3s;
+}
 
+#Services a:hover{
+  transform: translateY(-5px);
+  background-color: rgba(32, 32, 58, 0.719);
+  cursor: pointer;
+}
   
 .videoContainer{
   opacity: 0;
@@ -633,9 +652,19 @@ section{
     transition: 0.3s ease-in-out;
   }
   #Services h2{
-    font-size: 45px;
+    font-size: 5vw;
     margin-top: 10vh;
-    margin-bottom: 2vh;
+  }
+  #Services a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(26, 26, 55);
+    padding: 10px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: all linear 0.3s;
   }
 
   #Contact{

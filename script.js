@@ -36,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
               entry.target.classList.add('showVC');
-          } else {
-              entry.target.classList.remove('showVC');
           }
       });
   });
