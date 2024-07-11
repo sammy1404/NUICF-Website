@@ -42,3 +42,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainers.forEach((el) => observer.observe(el));
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const servicesHeader = document.querySelectorAll('.servicesHeader');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('showSH');
+        observer.unobserve(entry.target); // Stop observing once the class is added
+      }
+    });
+  });
+
+  servicesHeader.forEach((el) => observer.observe(el));
+});

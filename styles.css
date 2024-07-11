@@ -621,7 +621,7 @@ section{
 
 #Services a:hover{
   transform: translateY(-5px);
-  background-color: rgba(32, 32, 58, 0.719);
+  background-color: rgb(44, 44, 104);
   cursor: pointer;
 }
   
@@ -634,6 +634,20 @@ section{
 .showVC{
   opacity: 1;
   transform: scale(1);
+}
+
+.servicesHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 1.2s ease-in-out; /* Add transition for smooth effect */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.showSH {
+  transform: translateX(0);
 }
 
 /* mobile screen's stacked video container */
