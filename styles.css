@@ -175,7 +175,7 @@ body {
       font-size: 30px;
   }
   #Services h2{
-    font-size: 45px;
+    font-size: 3vw;
     margin-top: 13vh;
     margin-bottom: 2vh;
     color: royalblue;
@@ -649,12 +649,9 @@ body {
   opacity: .9;
 }
 
-/* mobile screen's stacked video container */
+/* mobile screen vertical orientation */
 @media (max-width: 450px) {
-  #Services{
-    height: 200vh;
-  }
- 
+
   .column {
     flex-direction: column; 
     flex-wrap: nowrap; 
@@ -708,20 +705,20 @@ body {
   }
 }
 
-
+/* mobile screen landscape orientation */
   @media(max-height: 450px) {
 
     #Services{
       display: flex; /* Ensure the parent is a flex container */
       flex-direction: column;
       justify-content: flex-start;
-      margin-top: 40px;
+      height: 140vh;
+     
     }
     
     .servicesHeader h2{
       color: royalblue;
-      font-size: 50px;
-      z-index: 10;
+      font-size: 3vw;
     }
 
     .videoContainer{
@@ -787,6 +784,98 @@ body {
   }
 
 
+#Announcements{
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcementsHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.announcementsHeader h2{
+  font-size: 6vw;
+  color: royalblue;
+  opacity: 0.9;
+}
+
+.announcementsHeader a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: rgb(26, 26, 55);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  align-items: center;
+}
+
+.announcementsHeader a:hover {
+  transform: translateY(-5px);
+  background-color: rgb(44, 44, 104);
+  cursor: pointer;
+}
+.eventListContainer {
+  width: 98%;
+  height: 55vh;
+  margin-top: 10vh;
+  display: flex;
+  transition: transform 1s ease; /* Removed initial transform */
+}
+
+.event {
+  width: 300px;
+  height: 400px;
+  margin: 2vw;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.event:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.event:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.event:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.event:nth-child(4) {
+  transition-delay: 900ms;
+}
+
+.showEL .event {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#event1 {
+  background: linear-gradient(135deg, #4158d0, #4c234a);
+}
+
+#event2 {
+  background: linear-gradient(135deg, #2a3a8a, #874b84);
+}
+
+#event3 {
+  background: linear-gradient(135deg, #7184e3, #4c234a);
+}
+
+#event4 {
+  background: linear-gradient(135deg, #4158d0, #a87da5);
+}
 
 
 /*  

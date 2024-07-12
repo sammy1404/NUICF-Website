@@ -59,3 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   servicesHeader.forEach((el) => observer.observe(el));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const eventListContainer = document.querySelector('.eventListContainer');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log('Element is intersecting'); // Debugging line
+        entry.target.classList.add('showEL');
+      }
+    });
+  });
+
+  observer.observe(eventListContainer);
+});
