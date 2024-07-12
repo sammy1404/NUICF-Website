@@ -8,12 +8,9 @@
 }
 body {
     overflow-x: hidden;
-    background-color: rgb(3, 3, 15);
-}
-
-section{
 
 }
+
 
 .logo a{
     color: #fff;
@@ -181,7 +178,7 @@ section{
     font-size: 45px;
     margin-top: 13vh;
     margin-bottom: 2vh;
-    color: white;
+    color: royalblue;
   }
     .grid-container {
       display: flex;
@@ -427,7 +424,7 @@ section{
     }
     
     #Services h2{
-      color: white;
+      color: royalblue;
       font-size: 50px;
       margin-top: 11vh;
     }
@@ -642,16 +639,22 @@ section{
   align-items: center;
   transform: translateX(-100%);
   transition: transform 1.2s ease-in-out; /* Add transition for smooth effect */
-  color: white;
+  color: royalblue;
   margin-bottom: 20px;
+  opacity: 0.5;
 }
 
 .showSH {
   transform: translateX(0);
+  opacity: .9;
 }
 
 /* mobile screen's stacked video container */
 @media (max-width: 450px) {
+  #Services{
+    height: 200vh;
+  }
+ 
   .column {
     flex-direction: column; 
     flex-wrap: nowrap; 
@@ -704,6 +707,85 @@ section{
     color: white;
   }
 }
+
+
+  @media(max-height: 450px) {
+
+    #Services{
+      display: flex; /* Ensure the parent is a flex container */
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+    
+    .servicesHeader h2{
+      color: royalblue;
+      font-size: 50px;
+      z-index: 10;
+    }
+
+    .videoContainer{
+      width: 100vw;
+      height: 60vw;
+    }
+
+    .grid-container {
+      display: flex;
+      width: 100vw;
+      max-width: 100%;
+      flex-direction: row;
+
+  }
+  
+  .column
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
+  
+  
+  .large-frame {
+      margin-left: 20px;
+  }
+  
+  .large-frame iframe{
+    width: 65vw;
+    height: 36.5vw;
+    padding: 15px;
+    background: linear-gradient(135deg, #4158d0, #4c234a);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  .large-frame iframe:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  
+  .small-frame {
+      color: white;
+
+  }
+  .small-frame iframe{
+    width: 30vw;
+    height: 17vw;
+    padding: 15px;
+    background: linear-gradient(135deg, #4158d0, #4c234a);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    margin: 0;
+  }
+  .small-frame iframe:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+
+  }
+
 
 
 
