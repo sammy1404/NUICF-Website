@@ -323,6 +323,12 @@ body {
   transform: translateY(-5px);
 }
 
+#Announcements{
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+}
+
   }
 
   #Services{
@@ -601,6 +607,11 @@ body {
   transform: translateY(-5px);
 }
 
+#Announcements{
+  height: 100vh;
+  margin-top: 7vh;
+}
+
 }
 
 #Services a{
@@ -702,6 +713,11 @@ body {
     font-size: 13px;
     color: white;
   }
+  #Announcements{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* mobile screen landscape orientation */
@@ -784,7 +800,6 @@ body {
 
 
 #Announcements{
-  height: 150vh;
   display: flex;
   flex-direction: column;
 }
