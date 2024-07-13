@@ -85,6 +85,10 @@ body {
   font-style: normal;
 }
 
+.gallery a{
+  display: none;
+}
+
 
 .welcome{
   display: flex;
@@ -379,6 +383,40 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
+.overlay-text1 {
+  position: absolute;
+  top: 25%; /* Center the text vertically */
+  left: 10%; /* Center the text horizontally */
+  color: rgba(255, 255, 255, 0.497); /* Text color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the text background */
+  font-size: 7vw; /* Adjust font size as needed */
+  font-weight: 600;
+}
+.overlay-text2 {
+  position: absolute;
+  top: 37%; /* Center the text vertically */
+  left: 11%; /* Center the text horizontally */
+  color: rgba(255, 255, 255, 0.748); /* Text color */
+  font-size: 7vw; /* Adjust font size as needed */
+  font-weight: 600;
+}
+
+.overlay-text3 {
+  position: absolute;
+  top: 65%; /* Center the text vertically */
+  left: 11%; /* Center the text horizontally */
+  color: rgb(255, 255, 255); /* Text color */
+  font-size: 4vw; /* Adjust font size as needed */
+  font-weight: 600;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
   }
 
@@ -769,6 +807,81 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .left-arrow, .right-arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are above other elements */
+    opacity: 0.4;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+
+  .overlay-text1 {
+    position: absolute;
+    top: 32%; /* Center the text vertically */
+    left: 10%; /* Center the text horizontally */
+    color: rgba(255, 255, 255, 0.846); /* Text color */
+    font-size: 8vw; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+  .overlay-text2 {
+    position: absolute;
+    top: 40%; /* Center the text vertically */
+    left: 12%; /* Center the text horizontally */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 8vw; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+
+  .overlay-text3 {
+    position: absolute;
+    top: 60%; /* Center the text vertically */
+    left: 11%; /* Center the text horizontally */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 6vw; /* Adjust font size as needed */
+    font-weight: 600;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .gallery a{
+    display: block;
+
+    transform: translate(30%,40vw);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    padding: 2vw;
+    padding-inline: 4vw;
+    background-color: rgb(26, 26, 55);
+    border-radius: 20px;
+    transition: all linear 0.3s ea;
+  }
+  .gallery a:hover{
+    display: block;
+
+    transform: translate(50%,40vw);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    padding: 2vw;
+    padding-inline: 4vw;
+    background-color: rgba(26, 26, 55, 0.59);
+    border-radius: 20px;
+  }
+
 }
 
 /* mobile screen landscape orientation */
