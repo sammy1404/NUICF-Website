@@ -122,6 +122,9 @@ body {
     font-family: 'Poppins', sans-serif;
   }
   
+.portraitLandingPage{
+  display: none;
+}
   .hamburger-menu{
       position: fixed;
       top: 0;
@@ -433,6 +436,7 @@ body {
   #active{
       display: none;
   }
+
   
   .menu-btn{
       display: none;
@@ -511,6 +515,9 @@ body {
   }
   
 
+.portraitLandingPage{
+  display: none;
+}
   #Services{
       display: flex; /* Ensure the parent is a flex container */
       flex-direction: column;
@@ -824,6 +831,12 @@ body {
   
   .right-arrow {
     right: 10px;
+  }
+  .landingPage{
+    display: none;
+  }
+  .portraitLandingPage{
+    display: block;
   }
 
   .overlay-text1 {
