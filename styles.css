@@ -8,7 +8,6 @@
 }
 body {
     overflow-x: hidden;
-
 }
 
 
@@ -788,7 +787,6 @@ body {
   height: 150vh;
   display: flex;
   flex-direction: column;
-  background-color: beige;
 }
 
 .announcementsHeader{
