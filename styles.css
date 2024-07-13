@@ -785,7 +785,7 @@ body {
 
 
 #Announcements{
-  height: 110vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
 }
@@ -822,18 +822,26 @@ body {
   background-color: rgb(44, 44, 104);
   cursor: pointer;
 }
+
 .eventListContainer {
-  width: 98%;
-  height: 55vh;
+  background-color: red;
+  width: 100%;
+  height: 60vh;
   margin-top: 10vh;
-  display: flex;
-  transition: transform 1s ease; /* Removed initial transform */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  transition: transform 1s ease;
+  text-align: center;
+  padding-inline:3vw;
 }
 
 .event {
-  width: 300px;
-  height: 400px;
-  margin: 2vw;
+  display: inline-block; /* Display inline for horizontal scrolling */
+  width: 300px; /* Fixed width */
+  height: 100%; /* Ensure height is consistent */
+  margin-left: 1vw;
+  margin-right: 1vw;
   border-radius: 20px;
   opacity: 0;
   transform: translateX(-100%);
