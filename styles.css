@@ -10,6 +10,26 @@ body {
     overflow-x: hidden;
 }
 
+span .overlay{
+  position: relative;
+}
+
+.overlayText{
+  position: absolute;
+  left: 80px;
+  top: 20vh;
+  color: rgba(255, 255, 255, 0.709);
+  font-size: 8vw;
+}
+.overlayText2{
+  position: absolute;
+  left: 80px;
+  top: 38vh;
+  color: rgba(255, 255, 255, 0.854);
+  font-size: 8vw;
+  margin-right: 80px;
+  line-height: 120px;
+}
 
 .logo a{
     color: #fff;
