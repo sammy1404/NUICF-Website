@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit&family=Pacifico&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,26 +12,8 @@ body {
     overflow-x: hidden;
 }
 
-span .overlay{
-  position: relative;
-}
 
-.overlayText{
-  position: absolute;
-  left: 80px;
-  top: 20vh;
-  color: rgba(255, 255, 255, 0.709);
-  font-size: 8vw;
-}
-.overlayText2{
-  position: absolute;
-  left: 80px;
-  top: 38vh;
-  color: rgba(255, 255, 255, 0.854);
-  font-size: 8vw;
-  margin-right: 80px;
-  line-height: 120px;
-}
+
 
 .logo a{
     color: #fff;
@@ -47,20 +31,66 @@ span .overlay{
 }
 
 
-
-.gallery{
+.gallery {
   width: 100vw;
   display: flex;
   overflow-x: hidden;
+  position: relative; /* Ensure positioning context for absolute elements */
 }
 
-.gallery img{
+.gallery img {
   width: 100vw;
   height: 105vh;
   object-fit: cover;
   object-position: center;
 }
 
+.landingPage{
+  object-position: left center;
+}
+
+.overlay {
+  position: relative; /* Position context for the overlay text */
+}
+
+.overlay-text1 {
+  position: absolute;
+  top: 17%; /* Center the text vertically */
+  left: 10%; /* Center the text horizontally */
+  color: rgba(255, 255, 255, 0.497); /* Text color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the text background */
+  font-size: 7vw; /* Adjust font size as needed */
+  font-weight: 600;
+}
+.overlay-text2 {
+  position: absolute;
+  top: 32%; /* Center the text vertically */
+  left: 11%; /* Center the text horizontally */
+  color: rgba(255, 255, 255, 0.748); /* Text color */
+  font-size: 7vw; /* Adjust font size as needed */
+  font-weight: 600;
+}
+
+.overlay-text3 {
+  position: absolute;
+  top: 70%; /* Center the text vertically */
+  left: 11%; /* Center the text horizontally */
+  color: rgb(255, 255, 255); /* Text color */
+  font-size: 2vw; /* Adjust font size as needed */
+  font-weight: 600;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 
 .left-arrow, .right-arrow {
   width: 50px;
@@ -69,7 +99,7 @@ span .overlay{
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  z-index: 0;
+  z-index: 1; /* Ensure arrows are above other elements */
 }
 
 .left-arrow {
@@ -79,6 +109,7 @@ span .overlay{
 .right-arrow {
   right: 10px;
 }
+
 @media (max-width: 980px){
   *{
     margin: 0;
