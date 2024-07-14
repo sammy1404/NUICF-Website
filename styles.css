@@ -125,7 +125,11 @@ body {
   background: linear-gradient(135deg, #313b6f, #0b122a);
 
 }
-
+.aboutDesc{
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
 #About p{
   font-size: 2vw;
   width: 90vw;
