@@ -914,7 +914,7 @@ body {
 
   .overlay-text1 {
     position: absolute;
-    top: 27%; /* Center the text vertically */
+    top: 29%; /* Center the text vertically */
     left: 10%; /* Center the text horizontally */
     color: rgba(255, 255, 255, 0.846); /* Text color */
     font-size: 8vw; /* Adjust font size as needed */
@@ -922,7 +922,7 @@ body {
   }
   .overlay-text2 {
     position: absolute;
-    top: 35%; /* Center the text vertically */
+    top: 37%; /* Center the text vertically */
     left: 12%; /* Center the text horizontally */
     color: rgb(255, 255, 255); /* Text color */
     font-size: 8vw; /* Adjust font size as needed */
@@ -931,7 +931,7 @@ body {
 
   .overlay-text3 {
     position: absolute;
-    top: 55%; /* Center the text vertically */
+    top: 57%; /* Center the text vertically */
     left: 11%; /* Center the text horizontally */
     color: rgb(255, 255, 255); /* Text color */
     font-size: 6vw; /* Adjust font size as needed */
