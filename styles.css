@@ -816,6 +816,20 @@ body {
 
 /* mobile screen vertical orientation */
 @media (max-width: 450px) {
+  
+
+  #About{
+    margin: 0;
+  }
+  #About h1{
+    font-size: 12vw;
+    margin-top: 0;
+  }
+
+  #About p{
+    font-size: 4vw;
+  }
+
 
   .column {
     flex-direction: column; 
