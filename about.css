@@ -19,7 +19,7 @@ section{
     margin-top: 3vh;
     gap: 20px;
 }
-a {
+.Return {
     color: white;
     font-size: 15px;
     text-decoration: none;
@@ -32,7 +32,7 @@ a {
     transition: all 0.3s;
   }
 
-  a:hover {
+  .Return:hover {
     transform: translateY(-5px); /* Move the element up */
     background-color: rgb(8, 8, 24);
     cursor: pointer;
@@ -62,6 +62,26 @@ a {
     flex-direction: column;
     gap: 2vw;
     padding-right: 4vw;
+  }
+
+  .SOFContainer{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .SOF{
+    background-color: transparent;
+    align-self: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719);
+    transition: all 0.5s;
+    font-size: 30px;
+  }
+  .SOF:hover{
+    transform: scale(1.15);
+    color: white;
   }
 
 @media (max-width: 450px) {
