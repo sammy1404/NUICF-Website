@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: linear-gradient(135deg, rgb(12, 32, 71), #0095ff);
+    height: 150%;
+    padding-bottom: 10vh;
+}
+
+section{
+    margin-left: 7vw;
+    margin-top: 3vh;
+    gap: 20px;
+}
+a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(26, 26, 55);
+    padding: 10px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: inline-block; /* Ensure the element is treated as a block-level element */
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    transform: translateY(-5px); /* Move the element up */
+    background-color: rgb(8, 8, 24);
+    cursor: pointer;
+  }
+
+
+  h1{
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.637);
+    margin-top: 3vh;
+  }
+
+  h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3vh;
+    color: rgba(255, 255, 255, 0.833);
+  }
+  li{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.879);
+    margin-bottom: 2vh;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 4vw;
+    padding-left: 5vw;
+  }
+
+@media (max-width: 450px) {
+
+
+    h1{
+        font-size: 12vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    li{
+        font-size: 4vw;
+    }
+
+    .container{
+        gap: 5vw;
+    }
+}
