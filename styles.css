@@ -437,6 +437,7 @@ body {
 
 #socials svg{
   width: 20px;
+  transform: translateY(3px);
   transition: all linear 0.3s;
 }
 
@@ -751,7 +752,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around; /* Change to space-between */
-  padding-inline: 43vw;
+  padding-inline: 45vw;
   height: 7vh;
   background-color: black;
   color: white;
@@ -761,6 +762,7 @@ body {
 #socials svg{
   width: 20px;
   transition: all linear 0.3s;
+  transform: translateY(3px);
 }
 
 #socials svg:hover{
@@ -881,7 +883,7 @@ body {
   }
 
   #socials{
-    padding-inline: 30vw;
+    padding-inline: 34vw;
   }
   #ministryDetails a {
     display: block; /* Make the link take up the full width, stacking below the list items */
