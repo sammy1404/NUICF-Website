@@ -772,7 +772,8 @@ body {
 
 #Announcements{
   height: 100vh;
-  margin-top: 7vh;
+  padding-top: 7vh;
+  background-color: beige;
 }
 
 }
