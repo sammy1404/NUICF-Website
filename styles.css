@@ -1107,13 +1107,15 @@ body {
 .event {
   display: inline-block; /* Display inline for horizontal scrolling */
   width: 300px; /* Fixed width */
-  height: 400px; /* Ensure height is consistent */
+  height: 450px; /* Ensure height is consistent */
   margin-left: 1vw;
   margin-right: 1vw;
   border-radius: 20px;
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1s ease, opacity 0.5s ease;
+  justify-content: center;
+  align-items: center;
 }
 
 .event:nth-child(1) {
@@ -1162,6 +1164,12 @@ body {
   color: white;
 }
 
+.event img{
+  width: 275px;
+  height: 425px;
+  border-radius: 10px;
+  transform: translateY(10px);
+}
 /*  
 rgb(3, 3, 15);
 */
