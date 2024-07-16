@@ -6,9 +6,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif; 
     scroll-behavior: smooth;
-    background: linear-gradient(to right, rgb(0, 200, 255), rgb(3, 255, 205));
     padding-left: 15px;
     padding-right: 10px;
+}
+
+
+body{
+    background: linear-gradient(to right, rgb(0, 200, 255), rgb(3, 255, 205));
+    padding-bottom: 10vh;
 }
 
 section{
@@ -37,4 +42,29 @@ p{
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media(max-width: 450px){
+    *{
+        padding: 5px;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    .paragraph{
+        gap: 10px;
+    }
 }
