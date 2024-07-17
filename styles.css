@@ -447,7 +447,7 @@ body {
 }
 
 #Announcements{
-  height: 160vh;
+  height: 140vh;
   display: flex;
   flex-direction: column;
 }
