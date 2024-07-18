@@ -55,12 +55,12 @@ body {
 
 .overlay-text1 {
   position: absolute;
-  top: 17%; /* Center the text vertically */
+  top: 12%; /* Center the text vertically */
   left: 10%; /* Center the text horizontally */
   color: rgba(255, 255, 255, 0.497); /* Text color */
   padding: 10px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners for the text background */
-  font-size: 7vw; /* Adjust font size as needed */
+  font-size: 8vw; /* Adjust font size as needed */
   font-weight: 600;
 }
 .overlay-text2 {
