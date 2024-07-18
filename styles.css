@@ -896,6 +896,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .left-arrow, .right-arrow {
     width: 20px;
     height: 20px;
@@ -1172,3 +1173,15 @@ body {
 /*  
 rgb(3, 3, 15);
 */
+
+/* very weird old screens */
+@media(max-height:750px){
+  #Announcements{
+    height: 143vh;
+  }
+
+  .eventListContainer{
+    background-color: beige;
+    height: fit-content;
+  }
+}
