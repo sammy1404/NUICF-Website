@@ -55,12 +55,12 @@ body {
 
 .overlay-text1 {
   position: absolute;
-  top: 17%; /* Center the text vertically */
+  top: 15%; /* Center the text vertically */
   left: 10%; /* Center the text horizontally */
   color: rgba(255, 255, 255, 0.497); /* Text color */
   padding: 10px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners for the text background */
-  font-size: 7vw; /* Adjust font size as needed */
+  font-size: 6vw; /* Adjust font size as needed */
   font-weight: 600;
 }
 .overlay-text2 {
@@ -119,18 +119,19 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items:start;
-  padding-left: 6vw;
   gap: 5vh;
   overflow-x: none;
   background-image: url('assets/service.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.85;
+  opacity: 0.93;
 }
 
 
 .aboutDesc{
+  margin-right: 3vw;
+  margin-left: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,11 +143,11 @@ body {
 #About p{
   font-size: 2vw;
   color: white;
-  width: 80vw;
   font-weight: 600;
 }
 #About h1{
-  color: rgba(255, 255, 255, 0.59);
+  padding-left: 6vw;
+  color: rgba(255, 255, 255, 0.726);
   font-size: 7vw;
   margin-top: 5vh;
 }
@@ -428,6 +429,7 @@ body {
 #map iframe {
   width: 300px;
   height: 200px;
+  border-radius: 10px;
 }
 
 #socials {
@@ -752,6 +754,7 @@ body {
 #map iframe {
   width: 300px;
   height: 200px;
+  border-radius: 10px;
 }
 
 #socials {
@@ -846,6 +849,10 @@ body {
   }
 
 
+  #Services{
+    height: 800px;
+  }
+
   .column {
     flex-direction: column; 
     flex-wrap: nowrap; 
@@ -899,7 +906,8 @@ body {
     text-decoration: none;
   }
   #Announcements{
-    height: 160vh;
+    height: 1000px;
+    transform: translateY(150px);
     display: flex;
     flex-direction: column;
   }
