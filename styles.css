@@ -997,6 +997,43 @@ body {
 /* mobile screen landscape orientation */
   @media(max-height: 450px) {
 
+
+.overlay-text1 {
+  position: absolute;
+  top: 27%; /* Center the text vertically */
+  left: 10%; /* Center the text horizontally */
+  color: rgba(255, 255, 255, 0.497); /* Text color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the text background */
+  font-size: 4vw; /* Adjust font size as needed */
+  font-weight: 600;
+}
+.overlay-text2 {
+  position: absolute;
+  top: 40%; /* Center the text vertically */
+  left: 11%; /* Center the text horizontally */
+  color: rgba(255, 255, 255, 0.748); /* Text color */
+  font-size: 5vw; /* Adjust font size as needed */
+  font-weight: 600;
+}
+
+.overlay-text3 {
+  position: absolute;
+  top:75%; /* Center the text vertically */
+  left: 11%; /* Center the text horizontally */
+  color: rgb(255, 255, 255); /* Text color */
+  font-size: 2vw; /* Adjust font size as needed */
+  font-weight: 600;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.welcome a{
+  display: none;
+}
+
     #Services{
       display: flex; /* Ensure the parent is a flex container */
       flex-direction: column;
