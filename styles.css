@@ -1199,6 +1199,7 @@ body {
 /* Initial hidden state */
 #About h1, 
 #About .aboutDesc{
+    opacity: 0;
     transform: translateY(90px);
     transition: opacity 1s ease-out, transform 0.8s ease-out;
 }
@@ -1207,6 +1208,7 @@ body {
 #About h1.visible, 
 #About .aboutDesc.visible{
     transform: translateY(0);
+    opacity: 1;
 }
 
 /*  
