@@ -71,7 +71,7 @@ body {
   color: rgba(255, 255, 255, 0.497); /* Text color */
   padding: 10px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners for the text background */
-  font-size: 11vh; /* Adjust font size as needed */
+  font-size: min(6.5vw,11vh); /* Adjust font size as needed */
   font-weight: 600;
 }
 .overlay-text2 {
@@ -79,7 +79,7 @@ body {
   top: 32%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgba(255, 255, 255, 0.748); /* Text color */
-  font-size: 13vh; /* Adjust font size as needed */
+  font-size: min(7vw, 13vh); /* Responsive font size */
   font-weight: 600;
 }
 
@@ -88,7 +88,7 @@ body {
   top: 73%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgb(255, 255, 255); /* Text color */
-  font-size: 4vh; /* Adjust font size as needed */
+  font-size: min(3vw, 4vh); /* Responsive font size */
   font-weight: 600;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
@@ -496,7 +496,7 @@ body {
 }
 .overlay-text2 {
   position: absolute;
-  top: 37%; /* Center the text vertically */
+  top: 40%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgba(255, 255, 255, 0.748); /* Text color */
   font-size: 7vw; /* Adjust font size as needed */
@@ -505,10 +505,10 @@ body {
 
 .overlay-text3 {
   position: absolute;
-  top: 65%; /* Center the text vertically */
+  top: 70%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgb(255, 255, 255); /* Text color */
-  font-size: 4vw; /* Adjust font size as needed */
+  font-size: 3.5vw; /* Adjust font size as needed */
   font-weight: 600;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
