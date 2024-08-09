@@ -311,6 +311,10 @@ body {
       color: #000000;
       font-size: 30px;
   }
+
+  #Services{
+    height: 1000px;
+  }
   #Services h2{
     font-size: 3vw;
     margin-top: 13vh;
@@ -465,7 +469,7 @@ body {
 }
 
 #Announcements{
-  height: 160vh;
+  height: 1000px;
   display: flex;
   flex-direction: column;
 }
