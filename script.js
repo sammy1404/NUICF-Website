@@ -74,3 +74,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(eventListContainer);
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+          }
+      });
+  });
+
+  // Observe each element
+  const elements = document.querySelectorAll("#About h1, #About .aboutDesc, #About a");
+  elements.forEach(el => observer.observe(el));
+});

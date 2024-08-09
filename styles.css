@@ -44,7 +44,9 @@ body {
   object-fit: cover;
   object-position: center;
 }
-
+.image1{
+  opacity: 0.9;
+}
 .landingPage{
   object-position: left center;
 }
@@ -159,14 +161,21 @@ body {
   background-color: rgba(254, 254, 253, 0.453);
   text-decoration: none;
   color: white;
-  transition: all linear 0.3s ;
   align-self: center;
   margin-right: 6vw;
+  transition: all linear 0.4s;
 }
 
 #About a:hover{
-  background-color: rgba(255, 255, 255, 0.445);
+  background-color: rgba(255, 255, 255, 0.187);
   transform: translateY(-5px);
+}
+#About a {
+  transform: translateY(30px);
+}
+
+#About a.visible {
+  transform: translateY(0);
 }
 
 @media (max-width: 980px){
@@ -1184,6 +1193,22 @@ body {
   border-radius: 10px;
   transform: translateY(10px);
 }
+
+
+
+/* Initial hidden state */
+#About h1, 
+#About .aboutDesc{
+    transform: translateY(90px);
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+/* Animation class for visible state */
+#About h1.visible, 
+#About .aboutDesc.visible{
+    transform: translateY(0);
+}
+
 /*  
 rgb(3, 3, 15);
 */
