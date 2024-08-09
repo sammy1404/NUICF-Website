@@ -71,7 +71,7 @@ body {
   color: rgba(255, 255, 255, 0.497); /* Text color */
   padding: 10px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners for the text background */
-  font-size: 10vh; /* Adjust font size as needed */
+  font-size: 11vh; /* Adjust font size as needed */
   font-weight: 600;
 }
 .overlay-text2 {
@@ -79,7 +79,7 @@ body {
   top: 32%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgba(255, 255, 255, 0.748); /* Text color */
-  font-size: 12vh; /* Adjust font size as needed */
+  font-size: 13vh; /* Adjust font size as needed */
   font-weight: 600;
 }
 
