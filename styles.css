@@ -71,7 +71,7 @@ body {
   color: rgba(255, 255, 255, 0.497); /* Text color */
   padding: 10px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners for the text background */
-  font-size: 6vw; /* Adjust font size as needed */
+  font-size: 10vh; /* Adjust font size as needed */
   font-weight: 600;
 }
 .overlay-text2 {
@@ -79,16 +79,16 @@ body {
   top: 32%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgba(255, 255, 255, 0.748); /* Text color */
-  font-size: 7vw; /* Adjust font size as needed */
+  font-size: 12vh; /* Adjust font size as needed */
   font-weight: 600;
 }
 
 .overlay-text3 {
   position: absolute;
-  top: 70%; /* Center the text vertically */
+  top: 73%; /* Center the text vertically */
   left: 11%; /* Center the text horizontally */
   color: rgb(255, 255, 255); /* Text color */
-  font-size: 2vw; /* Adjust font size as needed */
+  font-size: 4vh; /* Adjust font size as needed */
   font-weight: 600;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
@@ -618,7 +618,7 @@ body {
       display: flex; /* Ensure the parent is a flex container */
       flex-direction: column;
       justify-content: flex-start;
-      height: 1000px;
+      height: 900px;
     }
     
     #Services h2{
