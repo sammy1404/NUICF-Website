@@ -30,17 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // gallery picture 1 overlay animation  
 document.addEventListener("DOMContentLoaded", function() {
-  // Create the Intersection Observer
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animated'); // Add the class to trigger animation
+        entry.target.classList.add('animated');  
       } else {
-        entry.target.classList.remove('animated'); // Optional: Remove the class when out of view
+        entry.target.classList.remove('animated'); 
       }
     });
   }, {
-    threshold: 0.1 // Trigger animation when 50% of the element is visible
+    threshold: 0.8 
   });
 
   // Observe the .overlay-text4 element
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// about page appear animatioj
+// about page appear animation
 document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
