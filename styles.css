@@ -53,17 +53,7 @@ body {
   }
 }
 
-@media (max-width: 450px){
-  .overlay-text4{
 
-    top: 50%;
-    padding-left: 12vw;
-  }
-  .overlay-text4 li{
-    font-size: min(5vh,5vw); /* Adjust as needed */
-  }
-
-}
 .overlay-text4 a:hover{
   transform: translateY(-5px);
   background-color: rgba(255, 255, 255, 0.497);
@@ -147,7 +137,7 @@ body {
 }
 
 .overlay-text6 p{
-  font-size: min(10vh,10vw); /* Adjust as needed */
+  font-size: min(11vh,11vw); /* Adjust as needed */
   font-weight: bold;
   color: rgba(255, 255, 255, 0.715);
 }
@@ -167,7 +157,30 @@ body {
   opacity: 1; /* Ensure visibility */
 }
 
+@media (max-width: 450px){
+  .overlay-text4{
+    top: 50%;
+    padding-left: 12vw;
+  }
+  .overlay-text5{
 
+    top: 65%;
+    padding-left: 12vw;
+  }
+  .overlay-text6{
+
+    top: 65%;
+    padding-left: 12vw;
+  }
+
+  .overlay-text6 p{
+    font-size: min(9vh,9vw);
+  }
+  .overlay-text4 li{
+    font-size: min(5vh,5vw); /* Adjust as needed */
+  }
+
+}
 
 
 .logo a{
