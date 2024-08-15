@@ -51,6 +51,52 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');  
+      } else {
+        entry.target.classList.remove('animated'); 
+      }
+    });
+  }, {
+    threshold: 0.8 
+  });
+
+  // Observe the .overlay-text4 element
+  const target = document.querySelector('.overlay-text5');
+  if (target) {
+    observer.observe(target);
+  }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');  
+      } else {
+        entry.target.classList.remove('animated'); 
+      }
+    });
+  }, {
+    threshold: 0.8 
+  });
+
+  // Observe the .overlay-text4 element
+  const target = document.querySelector('.overlay-text6');
+  if (target) {
+    observer.observe(target);
+  }
+});
+
+
+
 // about page appear animation
 document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver(entries => {
