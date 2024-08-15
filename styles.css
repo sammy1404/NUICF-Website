@@ -147,7 +147,7 @@ body {
 }
 
 .overlay-text6 p{
-  font-size: min(11vh,11vw); /* Adjust as needed */
+  font-size: min(10vh,10vw); /* Adjust as needed */
   font-weight: bold;
   color: rgba(255, 255, 255, 0.715);
 }
