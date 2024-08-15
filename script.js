@@ -1,5 +1,4 @@
-// script.js
-
+// hamburger menu
 document.querySelectorAll('.menu a').forEach(item => {
     item.addEventListener('click', () => {
         document.getElementById('active').checked = false;
@@ -7,7 +6,7 @@ document.querySelectorAll('.menu a').forEach(item => {
 });
 
 
-
+// gallery button functionality
 document.addEventListener("DOMContentLoaded", function() {
     const gallery = document.getElementById("gallery");
     const leftArrow = document.getElementById("left-arrow");
@@ -28,28 +27,47 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // Create the Intersection Observer
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animated'); // Add the class to trigger animation
-        } else {
-          entry.target.classList.remove('animated'); // Optional: Remove the class when out of view
-        }
-      });
-    }, {
-      threshold: 0.1 // Trigger animation when 50% of the element is visible
+
+// gallery picture 1 overlay animation  
+document.addEventListener("DOMContentLoaded", function() {
+  // Create the Intersection Observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated'); // Add the class to trigger animation
+      } else {
+        entry.target.classList.remove('animated'); // Optional: Remove the class when out of view
+      }
     });
-  
-    // Observe the .overlay-text4 element
-    const target = document.querySelector('.overlay-text4');
-    if (target) {
-      observer.observe(target);
-    }
+  }, {
+    threshold: 0.1 // Trigger animation when 50% of the element is visible
   });
+
+  // Observe the .overlay-text4 element
+  const target = document.querySelector('.overlay-text4');
+  if (target) {
+    observer.observe(target);
+  }
+});
+
+
+// about page appear animatioj
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+          }
+      });
+  });
+
+  // Observe each element
+  const elements = document.querySelectorAll("#About h1, #About .aboutDesc, #About a");
+  elements.forEach(el => observer.observe(el));
+});
+
   
-// script.js
+// video container animation
 document.addEventListener("DOMContentLoaded", () => {
   const videoContainers = document.querySelectorAll('.videoContainer');
 
@@ -65,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// services h1 tag in from left animation
 document.addEventListener("DOMContentLoaded", () => {
   const servicesHeader = document.querySelectorAll('.servicesHeader');
 
@@ -81,6 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
   servicesHeader.forEach((el) => observer.observe(el));
 });
 
+
+// events card animation 
 document.addEventListener("DOMContentLoaded", () => {
   const eventListContainer = document.querySelector('.eventListContainer');
 
@@ -94,19 +114,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   observer.observe(eventListContainer);
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-          }
-      });
-  });
-
-  // Observe each element
-  const elements = document.querySelectorAll("#About h1, #About .aboutDesc, #About a");
-  elements.forEach(el => observer.observe(el));
 });
