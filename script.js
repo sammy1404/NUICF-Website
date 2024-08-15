@@ -6,6 +6,26 @@ document.querySelectorAll('.menu a').forEach(item => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const welcomeSection = document.querySelector(".welcome");
+  const options = {
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add a class to trigger the animation
+        welcomeSection.classList.add("animate");
+        observer.unobserve(entry.target); // Stop observing once the animation is triggered
+      }
+    });
+  }, options);
+
+  observer.observe(welcomeSection);
+});
+
+
 // gallery button functionality
 document.addEventListener("DOMContentLoaded", function() {
     const gallery = document.getElementById("gallery");
