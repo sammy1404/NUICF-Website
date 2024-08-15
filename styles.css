@@ -273,6 +273,57 @@ body {
   font-style: normal;
 }
 
+.welcome {
+  opacity: 0; /* Initially hidden */
+}
+
+.welcome .overlay-text1,
+.welcome .overlay-text2,
+.welcome .overlay-text3 {
+  opacity: 0;
+  transform: translateY(100px); /* Start from below the viewport */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.welcome a.overlay-text3 {
+  opacity: 0;
+  transform: translateY(300px); /* Start from below the viewport */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.welcome .overlay-text1 {
+  transition-delay: 0ms;
+}
+
+.welcome .overlay-text2 {
+  transition-delay: 300ms;
+}
+
+.welcome .overlay-text3 {
+  transition-delay: 600ms;
+}
+
+.welcome a.overlay-text3 {
+  transition-delay: 900ms; /* Adjust delay for anchor tag */
+}
+
+.welcome.show {
+  opacity: 1;
+}
+
+.welcome.show .overlay-text1,
+.welcome.show .overlay-text2,
+.welcome.show .overlay-text3{
+  opacity: 1;
+  transform: translateY(0); /* Move to the final position */
+}
+
+.welcome.show a.overlay-text3 {
+  opacity: 1;
+  transform: translateY(120px); /* Move to the final position */
+}
+
+
 .overlay a{
   display: none;
 }
@@ -1169,7 +1220,6 @@ body {
 
   .overlay a{
     display: block;
-
     transform: translate(36%,40vw);
     text-decoration: none;
     font-family: 'Poppins', sans-serif; 
