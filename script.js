@@ -5,6 +5,17 @@ document.querySelectorAll('.menu a').forEach(item => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Add a class to trigger the animation
+  const welcomeElements = document.querySelectorAll('.welcome .overlay-text1, .welcome .overlay-text2, .welcome .overlay-text3, .welcome a.overlay-text3');
+  welcomeElements.forEach((element, index) => {
+    element.style.animationDelay = `${index * 0.2}s`; // Stagger animations
+  });
+
+  // Add a class to start the animation
+  document.querySelector('.welcome').classList.add('animate');
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const welcomeSection = document.querySelector(".welcome");
