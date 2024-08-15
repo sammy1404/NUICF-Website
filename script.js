@@ -28,6 +28,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    // Create the Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated'); // Add the class to trigger animation
+        } else {
+          entry.target.classList.remove('animated'); // Optional: Remove the class when out of view
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger animation when 50% of the element is visible
+    });
+  
+    // Observe the .overlay-text4 element
+    const target = document.querySelector('.overlay-text4');
+    if (target) {
+      observer.observe(target);
+    }
+  });
+  
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
   const videoContainers = document.querySelectorAll('.videoContainer');

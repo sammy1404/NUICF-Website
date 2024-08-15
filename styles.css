@@ -11,6 +11,122 @@
 body {
     overflow-x: hidden;
 }
+.overlay-text4 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 9vw;
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  text-align: left;
+  width: 100%; /* Ensure the text is centered on the image */
+}
+
+.overlay-text4 p{
+  font-size: min(11vh,11vw); /* Adjust as needed */
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.715);
+}
+
+.overlay-text4 .caption{
+  font-size: min(7vh,7vw); /* Adjust as needed */
+  
+}
+.overlay-text4 a {
+  display: flex;
+  justify-content: center;
+  width: 50%; /* Use a percentage to make the width responsive */
+  max-width: 210px; /* Ensure it doesn't exceed 270px on larger screens */
+  border-radius: 25px;
+  margin-top: 25px;
+  padding: 10px; /* Slightly larger padding for better touch targets on mobile */
+  background-color: rgba(255, 255, 255, 0.316);
+  font-size: 20px; /* Start with a smaller base font size */
+  text-decoration: none;
+  color: white;
+  transition: all linear 0.3s;
+}
+
+@media (min-width: 768px) {
+  .overlay-text4 a {
+    font-size: 20px; /* Increase font size for larger screens */
+  }
+}
+
+@media (max-width: 450px){
+  .overlay-text4{
+
+    top: 50%;
+    padding-left: 12vw;
+  }
+  .overlay-text4 li{
+    font-size: min(5vh,5vw); /* Adjust as needed */
+  }
+
+}
+.overlay-text4 a:hover{
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.497);
+}
+
+
+.overlay-text4 ul{
+  list-style-type: none;
+  font-size: min(2.5vh,2.5vw); /* Adjust as needed */
+  color: rgba(255, 255, 255, 0.715);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.325);
+}
+
+/* CSS for Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay-text4 {
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease-out;
+}
+
+.overlay-text4.animated {
+  animation: fadeInUp 1s ease-out forwards; /* Apply the fade-in-up animation */
+  opacity: 1; /* Ensure visibility */
+}
+
+
+
+.overlay-text5 {
+  position: absolute;
+  top: 50%;
+  left: 250%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2vh; /* Adjust as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%; /* Ensure the text is centered on the image */
+}
+
+
+.overlay-text6 {
+  position: absolute;
+  top: 50%;
+  left: 350%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2vh; /* Adjust as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%; /* Ensure the text is centered on the image */
+}
 
 
 
@@ -53,9 +169,17 @@ body {
   object-fit: cover;
   object-position: center;
 }
-.image1{
-  opacity: 0.9;
+
+.image1 {
+  filter: brightness(60%) blur(1.2px); /* Default state with blur */
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
 }
+.image2 {
+  filter: brightness(60%); /* Default state with blur */
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+
 .landingPage{
   object-position: left center;
 }
@@ -96,7 +220,7 @@ body {
   font-style: normal;
 }
 
-.gallery a{
+.overlay a{
   display: none;
 }
 
@@ -137,6 +261,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.93;
+  height: 110vh;
 }
 
 
@@ -293,7 +418,7 @@ body {
     display: none;
   }
   
-    .gallery a{
+    .overlay a{
     font-size: 20px;
     display: block;
     text-decoration: none;
@@ -306,7 +431,7 @@ body {
     transition: all linear 0.3s;
     transform: translate(25vw,15vh);
   }
-  .gallery a:hover{
+  .overlay a:hover{
     background-color: rgba(26, 26, 55, 0.59);
   }
 
@@ -989,7 +1114,7 @@ body {
     font-style: normal;
   }
 
-  .gallery a{
+  .overlay a{
     display: block;
 
     transform: translate(36%,40vw);
@@ -1002,7 +1127,7 @@ body {
     border-radius: 20px;
     transition: all linear 0.3s ea;
   }
-  .gallery a:hover{
+  .overlay a:hover{
     background-color: rgba(26, 26, 55, 0.59);
   }
 
