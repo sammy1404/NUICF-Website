@@ -1492,6 +1492,13 @@ body {
   transform: translateY(120px); /* Move to the final position */
 }
 
-/*  
-rgb(3, 3, 15);
-*/
+
+
+.landingPage, .portraitLandingPage {
+  filter: brightness(70%) blur(7px); /* Default state with blur */
+  transition: filter 1s ease-in-out; /* Smooth transition for filter */
+}
+
+.landingPage.clear, .portraitLandingPage.clear {
+  filter: brightness(100%) blur(0); /* Bright and clear state */
+}
