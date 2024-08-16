@@ -9,10 +9,14 @@ window.onload = function() {
   console.log("Window loaded"); // Check if this logs in Safari's console
   const landingPage = document.querySelectorAll('.landingPage, .portraitLandingPage')
   const welcome = document.querySelector('.welcome');
+  const navigation = document.querySelectorAll('.nav, .hamburger-menu, .menu-btn');
 
   if (welcome) {
     console.log("Adding show class"); // Check if this logs
     welcome.classList.add('show');
+    navigation.forEach(function(element) {
+      element.classList.add('show');
+    });
     landingPage.forEach(function(element) {
       element.classList.add('clear');
     });

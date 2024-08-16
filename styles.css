@@ -217,18 +217,13 @@ body {
 
 .gallery img {
   width: 100vw;
-  height: 105vh;
+  height: 120vh;
   object-fit: cover;
   object-position: center;
 }
 
 .image1 {
   filter: brightness(60%) blur(1.2px); /* Default state with blur */
-  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
-}
-
-.image2 {
-  filter: brightness(60%); /* Default state with blur */
   transition: filter 0.3s ease; /* Smooth transition for the blur effect */
 }
 
@@ -1039,6 +1034,10 @@ body {
 @media (max-width: 450px) {
   
 
+  .image1 {
+    filter: brightness(70%) blur(1.1px); /* Default state with blur */
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+  }
   #About{
     margin: 0;
   }
@@ -1502,3 +1501,16 @@ body {
 .landingPage.clear, .portraitLandingPage.clear {
   filter: brightness(100%) blur(0); /* Bright and clear state */
 }
+
+.nav, .hamburger-menu, .menu-btn {
+  transform: translateY(-100px); /* Start above the viewport */
+  transition: transform 1s ease-out; /* Smooth transition effect */
+}
+
+.nav.show, .hamburger-menu.show, .menu-btn.show {
+  transform: translateY(0); /* Move to the original position */
+}
+
+
+
+
