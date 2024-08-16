@@ -199,6 +199,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const announcementHeaders = document.querySelectorAll('.announcementsHeader');
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('showAH'); // Add class when element is in view
+          }
+      });
+  });
+
+  announcementHeaders.forEach((el) => observer.observe(el));
+});
+
+
+
+
 // events card animation 
 document.addEventListener("DOMContentLoaded", () => {
   const eventListContainer = document.querySelector('.eventListContainer');
