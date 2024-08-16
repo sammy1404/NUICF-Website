@@ -5,13 +5,17 @@ document.querySelectorAll('.menu a').forEach(item => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
+  console.log("Window loaded"); // Check if this logs in Safari's console
   const welcome = document.querySelector('.welcome');
-  
+
   if (welcome) {
+    console.log("Adding show class"); // Check if this logs
     welcome.classList.add('show');
+  } else {
+    console.log("Element not found"); // Check if this logs
   }
-});
+};
 
 
 
