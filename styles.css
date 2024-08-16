@@ -189,13 +189,13 @@ body {
     font-weight: bold; 
     text-decoration: none;
     padding-left: 40px;
-    z-index: 1;
+    z-index: 2;
 }
 .menu-btn{
     position: fixed;
 }
 .nav .logo{
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -393,7 +393,7 @@ body {
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
     /* clip-path: circle(25px at calc(0% + 45px) 45px); */
     clip-path: circle(25px at calc(100% - 45px) 45px);
-    transition: all 0.375s ease-in-out;
+    transition: all 1s ease-in-out;
     z-index: 2;
   }
   #active:checked ~ .nav{
