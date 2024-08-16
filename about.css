@@ -12,6 +12,14 @@ body{
     background: linear-gradient(135deg, rgb(12, 32, 71), #0095ff);
     height: 150%;
     padding-bottom: 10vh;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition effect */
+}
+
+body.showBody{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 section{
