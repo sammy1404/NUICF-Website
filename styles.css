@@ -400,6 +400,7 @@ body {
     clip-path: circle(75%);
   }
   .menu-btn{
+    opacity: 0;
     position: fixed;
     z-index: 3;
     right: 20px;
@@ -416,7 +417,13 @@ body {
     background: linear-gradient(-135deg, #000000, #4158d0);
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
     transition: all 0.3s ease-in-out;
+    transition: opacity 2s ease-in;
+  } 
+
+  .menu-btn.show{
+    opacity: 1;
   }
+
   #active:checked ~ .menu-btn{
     background: #fff;
     color: #4158d0;
@@ -580,6 +587,7 @@ body {
 #contactDetails ul p {
   font-size: 10px;
 }
+
 
 #contactDetails ul svg {
   width: 15px;
@@ -1502,15 +1510,13 @@ body {
   filter: brightness(100%) blur(0); /* Bright and clear state */
 }
 
-.nav, .hamburger-menu, .menu-btn {
-  transform: translateY(-100px); /* Start above the viewport */
-  transition: transform 1s ease-out; /* Smooth transition effect */
-}
-
-.nav.show, .hamburger-menu.show, .menu-btn.show {
-  transform: translateY(0); /* Move to the original position */
+.nav, .hamburger-menu{
+  transform: translateY(-100px);
+  transition: all 1s ease-in-out;
 }
 
 
-
+.nav.show, .hamburger-menu.show{
+  transform: translateY(0);
+}
 
