@@ -189,13 +189,13 @@ body {
     font-weight: bold; 
     text-decoration: none;
     padding-left: 40px;
-    z-index: 2;
+    z-index: 1;
 }
 .menu-btn{
     position: fixed;
 }
 .nav .logo{
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -1520,3 +1520,7 @@ body {
   transform: translateY(0);
 }
 
+.mailLink{ 
+  text-decoration: none;
+  color: white;
+}
