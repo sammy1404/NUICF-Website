@@ -1386,6 +1386,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 0.5s ease;
 }
 
 .event-front{
