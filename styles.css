@@ -393,7 +393,7 @@ body {
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
     /* clip-path: circle(25px at calc(0% + 45px) 45px); */
     clip-path: circle(25px at calc(100% - 45px) 45px);
-    transition: all 1s ease-in-out;
+    transition: clip-path 0.3s ease-in-out;    
     z-index: 2;
   }
   #active:checked ~ .nav{
@@ -416,8 +416,9 @@ body {
     cursor: pointer;
     background: linear-gradient(-135deg, #000000, #4158d0);
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-    transition: all 0.3s ease-in-out;
-    transition: opacity 2s ease-in;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+
   } 
 
   .menu-btn.show{
@@ -1375,17 +1376,68 @@ body {
 }
 
 .event {
-  display: inline-block; /* Display inline for horizontal scrolling */
-  width: 300px; /* Fixed width */
-  height: 450px; /* Ensure height is consistent */
+  display: inline-block;
+  width: 300px;
+  height: 450px;
   margin-left: 1vw;
   margin-right: 1vw;
   border-radius: 20px;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 1s ease, opacity 0.5s ease;
+  perspective: 1000px; /* Add perspective for 3D effect */
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.event-front{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+}
+.event-back {
+  width: 91%;
+  height: 94%;
+  margin: 13px;
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.event-back .heading{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.event-back .description{
+  font-size: 15px;
+}
+
+.event-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.event-back {
+  background: rgba(255, 255, 255, 0.116);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.event:hover .event-front {
+  transform: rotateY(-180deg);
+}
+
+.event:hover .event-back {
+  transform: rotateY(0deg);
 }
 
 .event:nth-child(1) {
