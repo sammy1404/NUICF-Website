@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit&family=Pacifico&display=swap');
+
+
+
+.gallery {
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+    position: relative; /* Ensure positioning context for absolute elements */
+  }
+  
+  .left-arrow, .right-arrow {
+    opacity: 0.6;
+    transition: opacity 0.4s ease-in-out; /* Adjusted transition to only target opacity */
+  }
+  
+  .left-arrow:hover, .right-arrow:hover {
+    opacity: 0.9;
+  }
+  
+  .gallery img {
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .image1 {
+    filter: brightness(60%) blur(1.2px); /* Default state with blur */
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+  }
+  
+  
+  .landingPage{
+    object-position: left center;
+  }
+  
+  .left-arrow, .right-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are above other elements */
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+
+.overlay-text4 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 9vw;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    text-align: left;
+    width: 100%; /* Ensure the text is centered on the image */
+  }
+  
+  .overlay-text4 p{
+    font-size: min(11vh,11vw); /* Adjust as needed */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.715);
+  }
+  
+  .overlay-text4 .caption{
+    font-size: min(7vh,7vw); /* Adjust as needed */
+    
+  }
+  .overlay-text4 a {
+    display: flex;
+    justify-content: center;
+    width: 50%; /* Use a percentage to make the width responsive */
+    max-width: 210px; /* Ensure it doesn't exceed 270px on larger screens */
+    border-radius: 25px;
+    margin-top: 25px;
+    padding: 10px; /* Slightly larger padding for better touch targets on mobile */
+    background-color: rgba(255, 255, 255, 0.316);
+    font-size: 20px; /* Start with a smaller base font size */
+    text-decoration: none;
+    color: white;
+    transition: all linear 0.3s;
+  }
+  
+  @media (min-width: 768px) {
+    .overlay-text4 a {
+      font-size: 20px; /* Increase font size for larger screens */
+    }
+  }
+  
+
+
+.overlay-text4 a:hover{
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.497);
+  }
+  
+  
+  .overlay-text4 ul{
+    list-style-type: none;
+    font-size: min(2.5vh,2.5vw); /* Adjust as needed */
+    color: rgba(255, 255, 255, 0.715);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.325);
+  }
+
+
+  /* CSS for Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .overlay-text4 {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .overlay-text4.animated {
+    animation: fadeInUp 1s ease-out forwards; /* Apply the fade-in-up animation */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  
+  
+  .overlay-text5 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 9vw;
+    position: absolute;
+    top: 45%;
+    left: 200%;
+    text-align: left;
+    width: 100%; /* Ensure the text is centered on the image */
+  }
+  
+  .overlay-text5 p{
+    font-size: min(11vh,11vw); /* Adjust as needed */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.715);
+  }
+  .overlay-text5 .caption{
+    font-size: min(5vh,5vw); /* Adjust as needed */
+    
+  }
+  
+  
+  .overlay-text5 {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .overlay-text5.animated {
+    animation: fadeInUp 1s ease-out forwards; /* Apply the fade-in-up animation */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  
+  
+  .overlay-text6 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 9vw;
+    position: absolute;
+    top: 45%;
+    left: 300%;
+    text-align: left;
+    width: 100%; /* Ensure the text is centered on the image */
+  }
+  
+  .overlay-text6 p{
+    font-size: min(11vh,11vw); /* Adjust as needed */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.715);
+  }
+  .overlay-text6 .caption{
+    font-size: min(5vh,5vw); /* Adjust as needed */
+    
+  }
+  
+  
+  .overlay-text6 {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .overlay-text6.animated {
+    animation: fadeInUp 1s ease-out forwards; /* Apply the fade-in-up animation */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  @media (max-width: 450px){
+    .overlay-text4{
+      top: 50%;
+      padding-left: 12vw;
+    }
+    .overlay-text5{
+  
+      top: 55%;
+      padding-left: 12vw;
+    }
+    .overlay-text6{
+  
+      top: 55%;
+      padding-left: 12vw;
+    }
+  
+    .overlay-text6 p{
+      font-size: min(9vh,9vw);
+    }
+    .overlay-text4 li{
+      font-size: min(5vh,5vw); /* Adjust as needed */
+    }
+  
+  }
+
+  .overlay {
+    position: relative; /* Position context for the overlay text */
+  }
+  
+  .overlay-text1 {
+    position: absolute;
+    top: 15%; /* Center the text vertically */
+    left: 10%; /* Center the text horizontally */
+    color: rgba(255, 255, 255, 0.497); /* Text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners for the text background */
+    font-size: min(6.5vw,11vh); /* Adjust font size as needed */
+    font-weight: 600;
+  }
+  .overlay-text2 {
+    position: absolute;
+    top: 32%; /* Center the text vertically */
+    left: 11%; /* Center the text horizontally */
+    color: rgba(255, 255, 255, 0.748); /* Text color */
+    font-size: min(7vw, 13vh); /* Responsive font size */
+    font-weight: 600;
+  }
+  
+  .overlay-text3 {
+    position: absolute;
+    top: 73%; /* Center the text vertically */
+    left: 11%; /* Center the text horizontally */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: min(3vw, 4vh); /* Responsive font size */
+    font-weight: 600;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  
+  
+  .overlay a{
+    display: none;
+  }
+  
+  
+  .welcome{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  @media (max-width: 980px){
+    
+
+  .overlay a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    padding: 1.5vw;
+    padding-inline: 3vw;
+    background-color: rgb(26, 26, 55);
+    border-radius: 20px;
+    transition: all linear 0.3s;
+    transform: translate(25vw,15vh);
+  }
+  .overlay a:hover{
+    background-color: rgba(26, 26, 55, 0.59);
+  }
+
+
+
+.overlay-text1 {
+    position: absolute;
+    top: 25%; /* Center the text vertically */
+    left: 10%; /* Center the text horizontally */
+    color: rgba(255, 255, 255, 0.497); /* Text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners for the text background */
+    font-size: 7vw; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+  .overlay-text2 {
+    position: absolute;
+    top: 40%; /* Center the text vertically */
+    left: 11%; /* Center the text horizontally */
+    color: rgba(255, 255, 255, 0.748); /* Text color */
+    font-size: 7vw; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+  
+  .overlay-text3 {
+    position: absolute;
+    top: 70%; /* Center the text vertically */
+    left: 11%; /* Center the text horizontally */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 3.5vw; /* Adjust font size as needed */
+    font-weight: 600;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  
+
+    .image1 {
+      filter: brightness(70%) blur(1.1px); /* Default state with blur */
+      transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+    }
+
+
+
+  .left-arrow, .right-arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are above other elements */
+    opacity: 0.4;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  .landingPage{
+    display: none;
+  }
+  .portraitLandingPage{
+    display: block;
+  }
+
+  .overlay-text1 {
+    position: absolute;
+    top: 29%; /* Center the text vertically */
+    left: 10%; /* Center the text horizontally */
+    color: rgba(255, 255, 255, 0.846); /* Text color */
+    font-size: 8vw; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+  .overlay-text2 {
+    position: absolute;
+    top: 37%; /* Center the text vertically */
+    left: 12%; /* Center the text horizontally */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 8vw; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+
+  .overlay-text3 {
+    position: absolute;
+    top: 57%; /* Center the text vertically */
+    left: 11%; /* Center the text horizontally */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 6vw; /* Adjust font size as needed */
+    font-weight: 600;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .overlay a{
+    display: block;
+    transform: translate(36%,40vw);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    padding: 2vw;
+    padding-inline: 4vw;
+    background-color: rgb(26, 26, 55);
+    border-radius: 20px;
+    transition: all linear 0.3s ea;
+  }
+  .overlay a:hover{
+    background-color: rgba(26, 26, 55, 0.59);
+  }
+
+
+}
+
+
+@media(max-height: 450px) {
+
+
+    .overlay-text1 {
+      position: absolute;
+      top: 27%; /* Center the text vertically */
+      left: 10%; /* Center the text horizontally */
+      color: rgba(255, 255, 255, 0.497); /* Text color */
+      padding: 10px; /* Padding around the text */
+      border-radius: 5px; /* Rounded corners for the text background */
+      font-size: 4vw; /* Adjust font size as needed */
+      font-weight: 600;
+    }
+    .overlay-text2 {
+      position: absolute;
+      top: 40%; /* Center the text vertically */
+      left: 11%; /* Center the text horizontally */
+      color: rgba(255, 255, 255, 0.748); /* Text color */
+      font-size: 5vw; /* Adjust font size as needed */
+      font-weight: 600;
+    }
+    
+    .overlay-text3 {
+      position: absolute;
+      top:75%; /* Center the text vertically */
+      left: 11%; /* Center the text horizontally */
+      color: rgb(255, 255, 255); /* Text color */
+      font-size: 2vw; /* Adjust font size as needed */
+      font-weight: 600;
+      font-family: "Comfortaa", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+    
+    .welcome a{
+      display: none;
+    }
+}
+
+
+
+.welcome {
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .welcome .overlay-text1,
+  .welcome .overlay-text2,
+  .welcome .overlay-text3 {
+    opacity: 0;
+    transform: translateY(100px); /* Start from below the viewport */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .welcome a.overlay-text3 {
+    opacity: 0;
+    transform: translateY(300px); /* Start from below the viewport */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .welcome .overlay-text1 {
+    transition-delay: 0ms;
+  }
+  
+  .welcome .overlay-text2 {
+    transition-delay: 300ms;
+  }
+  
+  .welcome .overlay-text3 {
+    transition-delay: 600ms;
+  }
+  
+  .welcome a.overlay-text3 {
+    transition-delay: 900ms; /* Adjust delay for anchor tag */
+  }
+  
+  .welcome.show {
+    opacity: 1;
+  }
+  
+  .welcome.show .overlay-text1,
+  .welcome.show .overlay-text2,
+  .welcome.show .overlay-text3{
+    opacity: 1;
+    transform: translateY(0); /* Move to the final position */
+  }
+  
+  .welcome.show a.overlay-text3 {
+    opacity: 1;
+    transform: translateY(120px); /* Move to the final position */
+  }
+  
+  
+  
+  .landingPage, .portraitLandingPage {
+    filter: brightness(70%) blur(7px); /* Default state with blur */
+    transition: filter 1s ease-in-out; /* Smooth transition for filter */
+  }
+  
+  .landingPage.clear, .portraitLandingPage.clear {
+    filter: brightness(100%) blur(0); /* Bright and clear state */
+  }
+  

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit&family=Pacifico&display=swap');
+
+
+
+#About{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:start;
+    gap: 5vh;
+    overflow-x: none;
+    background-image: url('../assets/service.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 110vh;
+  }
+  
+  
+  .aboutDesc{
+    margin-right: 3vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+    background-color: rgba(3, 3, 3, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #About p{
+    font-size: 2vw;
+    color: white;
+    font-weight: 600;
+  }
+  #About h1{
+    padding-left: 6vw;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 7vw;
+    margin-top: 5vh;
+  }
+  #About a{
+    font-size: 20px;
+    padding: 10px;
+    padding-inline: 15px;
+    border-radius: 20px;
+    background-color: rgba(254, 254, 253, 0.315);
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin-right: 6vw;
+    transition: all linear 0.4s;
+  }
+  
+  #About a:hover{
+    background-color: rgba(255, 255, 255, 0.122);
+    transform: translateY(-5px);
+  }
+  #About a {
+    transform: translateY(30px);
+  }
+  
+  #About a.visible {
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 450px) {
+  
+    #About{
+      margin: 0;
+    }
+    #About h1{
+      font-size: 12vw;
+      margin-top: 0;
+    }
+  
+    #About p{
+      font-size: 4vw;
+    }
+  }  
+
+
+
+/* Initial hidden state */
+#About h1, 
+#About .aboutDesc{
+    opacity: 0;
+    transform: translateY(90px);
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+/* Animation class for visible state */
+#About h1.visible, 
+#About .aboutDesc.visible{
+    transform: translateY(0);
+    opacity: 1;
+}
