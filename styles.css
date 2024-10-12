@@ -23,7 +23,9 @@ body {
 .menu-btn{
     position: fixed;
 }
-
+.nav .logo{
+    z-index: 1;
+}
 
 
 @media (max-width: 980px){
@@ -58,9 +60,8 @@ body {
     /* clip-path: circle(25px at calc(0% + 45px) 45px); */
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: clip-path 0.3s ease-in-out;    
-    z-index: 3;
+    z-index: 10;
   }
-
   #active:checked ~ .nav{
     clip-path: circle(75%);
   }
@@ -300,6 +301,7 @@ body {
       width: 100%;
       background: #4158d0;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      z-index: 10;
   }
   .gallery-wrap svg{
     display: none;
@@ -719,7 +721,6 @@ body {
 .nav.show, .hamburger-menu.show{
   transform: translateY(0);
 }
-
 
 .mailLink{ 
   text-decoration: none;
