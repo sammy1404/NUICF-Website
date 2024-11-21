@@ -12,6 +12,9 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
 .logo a{
     color: #fff;
     font-size: 60px;
@@ -184,8 +187,13 @@ body {
   gap: 2px; /* Adjust the gap as needed */
 }
 
-#contactDetails ul p {
+#contactDetails ul .footertext {
   font-size: 10px;
+}
+.footerheading{
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 
@@ -396,9 +404,15 @@ body {
   gap: 2px; /* Adjust the gap as needed */
 }
 
-#contactDetails ul p {
+#contactDetails ul .footertext {
   font-size: 13px;
 }
+.footerheading{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 
 #contactDetails ul svg {
   width: 15px;
@@ -486,7 +500,7 @@ body {
 
 
   #Contact{
-    height:90vh;
+    height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

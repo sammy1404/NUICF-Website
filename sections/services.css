@@ -46,7 +46,8 @@
 
 @media (max-width: 980px){
 #Services{
-    height: 1000px;
+    height: fit-content;
+    padding-bottom: 50px;
   }
   #Services h2{
     font-size: 3vw;
@@ -194,7 +195,7 @@
 
 
   #Services{
-    height: 800px;
+    height: fit-content;
   }
 
   .column {
