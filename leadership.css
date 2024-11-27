@@ -40,6 +40,10 @@ p{
         padding-top: 20px;
         font-size: 30px;
     }
+    p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
 }
 
 .leadership-container {
