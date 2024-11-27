@@ -10,33 +10,118 @@
 
 body{
     background: linear-gradient(135deg, rgb(0, 85, 255), #00d9ff);
-    height: 100vh;
     padding-bottom: 10vh;
 }
 
 .content{
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 h1{
-    font-size: 80px;
+    font-size: 70px;
     color: rgba(255, 228, 196, 0.722);
 }
 
 p{
     color: white;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 
 
-@media(max-width:450px){
+@media(max-width:750px){
     .content{
         padding-left: 30px;
-        padding-right: 15px;
+        padding-right: 30px;
     }
     h1{
         padding-top: 20px;
         font-size: 30px;
     }
+}
+
+.leadership-container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the boxes */
+}
+
+.leadership-member {
+    flex: 0 0 350px; 
+    margin: 10px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.722);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.displayPic{
+    width: 330px;
+    height: auto;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.605)); /* Mask from top transparent to bottom white */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.612)); /* For Safari */
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.4s  ease-in-out;
+    
+}
+
+.displayPic:hover{
+    transform: scale(1.18);
+    cursor: pointer;
+}
+
+.displayPic:hover + .description h2{
+    transform: scale(1.2) translateY(-20px);
+    color: #ffffff;
+}
+
+@media (max-width: 750px) {
+    .leadership-member {
+        flex: 0 0 350px; 
+    }
+}
+
+.description{
+
+    transition: all 0.4s ease-in-out;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+h6{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+a{
+    background-color: rgba(255, 255, 255, 0.156);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover{
+    transform: scale(1.2);
+    background-color: #ffffff00;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
