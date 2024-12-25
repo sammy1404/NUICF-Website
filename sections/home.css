@@ -4,11 +4,15 @@
 
 
 .gallery {
-    width: 100vw;
-    display: flex;
-    overflow-x: hidden;
+    display: flex; /* Ensure items are in a row */
+    overflow-x: scroll;
+    width: 100vw; /* Full width */
     position: relative; /* Ensure positioning context for absolute elements */
   }
+
+  .gallery::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in webkit browsers */
+}
   
   .left-arrow, .right-arrow {
     opacity: 0.6;

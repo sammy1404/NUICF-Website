@@ -64,7 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const gallery = document.getElementById("gallery");
     const leftArrow = document.getElementById("left-arrow");
     const rightArrow = document.getElementById("right-arrow");
-  
+
+    
     leftArrow.addEventListener("click", function() {
       gallery.scrollBy({
         left: -window.innerWidth,
